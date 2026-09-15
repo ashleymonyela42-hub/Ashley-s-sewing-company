@@ -2,3 +2,14 @@ body{
     background-color: white;
     color: darkgrey;
 }
+header{
+    background-color: darkpink;
+}
+.hero{
+    background-color: lightpink;
+}
+h1
+h2
+h3{
+    color: darkpink;
+}
