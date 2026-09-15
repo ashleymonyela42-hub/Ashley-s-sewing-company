@@ -17,3 +17,7 @@ h3{
     background-color: darkpink;
     color: white;
 }
+btn:hover{
+    background-color: lightpink;
+    color: darkpink;
+}
