@@ -19,9 +19,12 @@ h3{
 }
 btn:hover{
     background-color: gold;
-    color: darkpink;
 }
 .card{
     background-color: white;
     color: gold;
+}
+footer{
+    background-color: darkpink;
+    color: white;
 }
