@@ -18,11 +18,11 @@ h3{
     color: white;
 }
 btn:hover{
-    background-color: gold;
+    background-color: rgb(139, 119, 3);
 }
 .card{
     background-color: white;
-    color: gold;
+    color: rgb(141, 120, 3);
 }
 footer{
     background-color: darkpink;
