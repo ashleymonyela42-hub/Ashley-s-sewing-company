@@ -18,6 +18,10 @@ h3{
     color: white;
 }
 btn:hover{
-    background-color: lightpink;
+    background-color: gold;
     color: darkpink;
+}
+.card{
+    background-color: white;
+    color: gold;
 }
