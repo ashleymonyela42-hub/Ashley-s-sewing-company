@@ -8,9 +8,8 @@ header{
 .hero{
     background-color: rgb(247, 133, 203);
 }
-h1
-h2
-h3
+h1, h2, h3
+
 {
     color: darkpink;
 }
