@@ -6,7 +6,7 @@ header{
     background-color: darkpink;
 }
 .hero{
-    background-color: rgb(102, 78, 209);
+    background-color: rgb(247, 133, 203);
 }
 h1
 h2
@@ -17,14 +17,14 @@ h3{
     background-color: darkpink;
     color: white;
 }
-btn:hover{
-    background-color: rgb(139, 119, 3);
+.btn:hover{
+    background-color: rgb(3, 23, 139);
 }
 .card{
     background-color: white;
-    color: lightpink;
+    color: rgb(121, 91, 252);
 }
 footer{
-    background-color: rgb(105, 105, 228); ;
+    background-color: rgb(228, 105, 218); ;
     color: white;
 }
