@@ -15,3 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+document.querySelectorAll(".faq-question").forEach(function(button) {
+    button.addEventListener("click", function() {
+        const faqAnswer = this.nextElementSibling;
+        faqAnswer.classList.toggle("visible");
+    });
+    if(answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+    }else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        answer.style.padding = "10px";
+    }
+});
