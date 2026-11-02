@@ -311,7 +311,7 @@ faq answer{
 }
 
 body{
-    background-color:var(--black);
+    background-color:var(--blue);
 }
 header{
     background-color:var(--dark-pink);
