@@ -329,3 +329,36 @@ h1{
 main {
     animation: fadeIn 1s ease-in-out;
 }
+
+button,
+btn{
+    transition:all 0.3s aease-in-out;
+}
+buttoon:hover,
+btn:hover{
+    transform:scale(1.05);
+}
+
+img{
+    transition:transform 0.3s ease;
+}
+img:hover{
+    transform:scale(1.05);
+}
+
+nav{
+    transition:color 0.3s ease;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+logo{
+    animation
+    ;float 3s ease-in-out infinite;
+}
