@@ -60,3 +60,10 @@ button{
     transition:all 0.3s ease-in-out;    
     cursor: pointer;
 }
+button:hover{
+    background-color: rgb(155, 168, 241);
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
