@@ -1,12 +1,12 @@
 :root{
-    --dark-pink: #ff007f;
-    --light-pink: #ff66b2;
-    --golden: #ffd700;
+    --dark-pink: #f796c6;
+    --light-pink: #fd399b;
+    --golden: #6b5c05;
     --white: #ffffff;
     --black: #000000;
 }
  body {
-    background-color: var(--black);
+    background-color: var(--fawn);
     color: var(--white);
     font-family: Arial, sans-serif;
     margin: 0;
@@ -35,7 +35,7 @@ btn:hover {
     background-color: var(--dark-pink);
 }
 card {
-    background-color: var(--black);
+    background-color: var(--fawn);
     border: 1px solid var(--golden);
     padding: 20px;
     margin: 20px;
@@ -108,7 +108,7 @@ content h2 {
     margin-bottom: 10px;
 }
 cards {
-    background-color: var(--black);
+    background-color: var(--grey);
     border: 1px solid var(--golden);
     padding: 20px;
     margin: 20px;

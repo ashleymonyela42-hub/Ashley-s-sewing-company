@@ -115,7 +115,7 @@ cards {
     border-radius: 10px;
 }
 card {
-    background-color: var(--black);
+    background-color: var(--fawn);
     border: 1px solid var(--golden);
     padding: 20px;
     margin: 20px;
