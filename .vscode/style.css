@@ -215,79 +215,135 @@ form button:hover {
     }
 }
 
-
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
-    animation: fadeIn 1s ease-in-out;
+
+/* Page opening animation */
+body {
+    animation: pageFade 1s ease-in-out;
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-header{
-    animation: slideDown 1s ease-in-out;
+
+/* Header animation */
+header {
+    animation: slideDown 1s ease;
 }
+
 @keyframes slideDown {
-    from { transform: translateY(-100%); }
-    to { transform: translateY(0); }
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-nav{
-    transition: background-color 0.3s ease-in-out;
-    background-color: 0.3s ease-in-out;
-    transform: 0.3s ease-in-out;
+
+/* Heading animation */
+h1, h2 {
+    animation: slideLeft 1s ease;
 }
-nav:hover{
-    background-color: rgb(155, 168, 241);
-    transform: scale(1.05);
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
-button{
-    transition:all 0.3s ease-in-out;    
+
+/* Navigation hover animation */
+nav a {
+    transition: color 0.3s ease,
+                background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #e9a6c0;
+    transform: translateY(-3px);
+}
+
+/* Button hover animation */
+button {
+    transition: all 0.3s ease;
     cursor: pointer;
 }
-button:hover{
-    background-color: rgb(155, 168, 241);
-    color: white;
+
+button:hover {
+    background-color: #e9a6c0;
+    color: #14213d;
     transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 12px rgba(20, 33, 61, 0.2);
 }
-gallery img{
-    transition:transform 0.3s ease-in-out;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+/* Gallery image animation */
+.gallery img {
+    transition: transform 0.5s ease,
+                box-shadow 0.5s ease;
 }
-gallery img:hover{
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+
+.gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(20, 33, 61, 0.25);
 }
-content{
+
+/* Content animation when scrolling */
+.content {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease,
+                transform 0.8s ease;
 }
-content.show{
+
+.content.show {
     opacity: 1;
     transform: translateY(0);
 }
-faq-answer{
+
+/* FAQ animation */
+.faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    padding: 0.5s ease-in-out;
+    transition: max-height 0.5s ease,
+                padding 0.5s ease;
 }
-#lightbox{
-    animation: fadeIn 0.5s ease-in-out;
+
+/* Lightbox animation */
+#lightbox {
+    animation: lightboxFade 0.4s ease;
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+
+@keyframes lightboxFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-@media(prefers-reduced-motion: reduce){
-    *, *::before, *::after{
-        animation: none !important;
-        transition: none !important;
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }
