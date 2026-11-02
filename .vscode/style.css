@@ -22,7 +22,7 @@ hero {
 h1
 h2
 h3 {
-    color: var(--golden);
+    color: var(--greenShade);
 }
 btn {
     background-color: var(--light-pink);
