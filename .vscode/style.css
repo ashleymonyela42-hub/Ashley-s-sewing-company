@@ -309,3 +309,10 @@ faq answer{
         scroll-behavior:auto!important;
     }
 }
+
+body{
+    background-color:lightpink !important;
+}
+h1{
+    color:navy !important
+}
