@@ -54,4 +54,9 @@ nav{
 nav:hover{
     background-color: rgb(3, 23, 139);
     transform: scale(1.05);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+button{
+    transition:all 0.3s ease-in-out;    
+    cursor: pointer;
 }
