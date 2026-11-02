@@ -28,3 +28,30 @@ footer{
     background-color: rgb(228, 105, 218); ;
     color: white;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+header{
+    animation: slideDown 1s ease-in-out;
+}
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+nav{
+    transition: background-color 0.3s ease-in-out;
+    background-color: 0.3s ease-in-out;
+    transform: 0.3s ease-in-out;
+}
+nav:hover{
+    background-color: rgb(3, 23, 139);
+    transform: scale(1.05);
+}
