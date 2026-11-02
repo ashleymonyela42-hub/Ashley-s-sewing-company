@@ -1,33 +1,220 @@
-body{
-    background-color: white;
-    
+:root {
+    --navy-blue: #0B1F3A;
+    --light-pink: #F8DDE6;
+    --white: #FFFFFF;
+    --dark-text: #333333;
 }
-header{
-    background-color: darkpink;
-}
-.hero{
-    background-color: rgb(247, 133, 203);
-}
-h1, h2, h3
 
-{
-    color: darkpink;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.btn{
-    background-color: darkpink;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: var(--light-pink);
+}
+
+.hero {
+    background-color: var(--light-pink);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    color: var(--navy-blue);
+    font-size: 32px;
+}
+
+.hero p {
+    margin: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #203D60;
+}
+
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: var(--navy-blue);
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--light-pink);
+    padding: 25px;
+    border-radius: 8px;
+    width: 280px;
+}
+
+.card h3 {
+    color: var(--navy-blue);
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Forms */
+
+form {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: var(--light-pink);
+    border-radius: 8px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--navy-blue);
     color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
 }
-.btn:hover{
-    background-color: rgb(3, 23, 139);
+
+form button:hover {
+    background-color: #203D60;
 }
-.card{
-    background-color: white;
-    color: rgb(121, 91, 252);
+
+#formMessage,
+#priceResult {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--navy-blue);
 }
-footer{
-    background-color: rgb(228, 105, 218); ;
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* FAQ */
+
+.faq-answer {
+    display: none;
+    padding: 12px;
+}
+
+.faq-question {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--navy-blue);
     color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
 }
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+}
+
 
 html{
     scroll-behavior: smooth;
