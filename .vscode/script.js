@@ -28,3 +28,4 @@ document.querySelectorAll(".faq-question").forEach(function(button) {
         answer.style.padding = "10px";
     }
 });
+<link rel="stylesheet" href="style.css"></link>
