@@ -52,7 +52,7 @@ nav{
     transform: 0.3s ease-in-out;
 }
 nav:hover{
-    background-color: rgb(3, 23, 139);
+    background-color: rgb(155, 168, 241);
     transform: scale(1.05);
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
