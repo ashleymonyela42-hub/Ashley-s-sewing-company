@@ -9,6 +9,10 @@ Referances
 [image online] available at: <https://i.pinimg.com/736x/21/50/a5/2150a5bf53cb2f1e27b6ad7e0a3aa3ea.jpg/> [Accessed 18 September 2026].
 [image online] Available at: <https://schoolwearcentre.co.za/images/products/tracksuite_burgendy_stripe_front.jpg/> [Accessed 18 September 2026].
 [image online] Available at: <https://topfitclothing.com/wp-content/uploads/2025/07/Personalized-Clothing.jpg/> Accessed 18 September 2026].
+
+
+
+
 Added SEO page titles and meta description to improve search engine visibility.
 Improved the website styling using navy blue, light pink and white.
 Added CSS animation and hover effects to improve the user experience.
