@@ -85,3 +85,22 @@ content.show{
     opacity: 1;
     transform: translateY(0);
 }
+faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0.5s ease-in-out;
+}
+#lightbox{
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@media(prefers-reduced-motion: reduce){
+    *, *::before, *::after{
+        animation: none !important;
+        transition: none !important;
+    }
+}
